@@ -1,15 +1,21 @@
 #include "monty.h"
-#include <stdio.h>
-
-void pall(stack_t **stack, unsigned int line_number)
+/**
+ * fnc_pall - prints the stack
+ * @head: stack head
+ * @counter: no used
+ * Return: no return
+*/
+void fnc_pall(stack_t **head, unsigned int counter)
 {
-    (void)line_number; /* Unused parameter */
+	stack_t *he;
+	(void)counter;
 
-    stack_t *current = *stack;
-    while (current != NULL)
-    {
-        printf("%d\n", current->n);
-        current = current->next;
-    }
+	he = *head;
+	if (he == NULL)
+		return;
+	while (he)
+	{
+		printf("%d\n", he->n);
+		he = he->next;
+	}
 }
-
