@@ -15,6 +15,10 @@ int execute_f(char *content, stack_t **stack, unsigned int counter, FILE *file)
 				{"swap", fnc_swap},
 				{"add", fnc_add},
 				{"nop", fnc_nop},
+				{"f_sub", fnc_sub},
+				{"f_div", fnc_div},
+				{"f_mul", fnc_mul},
+				{"f_mod", fnc_mod},
 				{"queue", fnc_queue},
 				{"stack", fnc_stack},
 				{NULL, NULL}
