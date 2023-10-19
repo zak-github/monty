@@ -57,12 +57,15 @@ char  *clean_line(char *content);
 void fnc_push(stack_t **head, unsigned int number);
 void fnc_pall(stack_t **head, unsigned int number);
 void fnc_pint(stack_t **head, unsigned int number);
-void f_pop(stack_t **head, unsigned int counter);
-void f_swap(stack_t **head, unsigned int counter);
-void f_add(stack_t **head, unsigned int counter);
-void f_nop(stack_t **head, unsigned int counter);
-void addnode(stack_t **head, int n);
-void addqueue(stack_t **head, int n);
-void f_queue(stack_t **head, unsigned int counter);
-void f_stack(stack_t **head, unsigned int counter);
+int execute_f(char *content, stack_t **head, unsigned int counter, FILE *file);
+void fr_stack(stack_t *head);
+void fnc_pop(stack_t **head, unsigned int counter);
+void fnc_swap(stack_t **head, unsigned int counter);
+void fnc_add(stack_t **head, unsigned int counter);
+void fnc_nop(stack_t **head, unsigned int counter);
+void addnode_f(stack_t **head, int n);
+void addqueue_f(stack_t **head, int n);
+void fnc_queue(stack_t **head, unsigned int counter);
+void fnc_stack(stack_t **head, unsigned int counter);
 #endif
+
